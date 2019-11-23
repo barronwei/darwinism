@@ -6,3 +6,4 @@ GENED 1004
 
 - Add Makefile
 - Add test harness
+- Add Black pre-commit
