@@ -53,7 +53,7 @@ class Genome:
         return {"A": "T", "G": "C", "T": "A", "C": "G"}.get(v)
 
     def __r_modify(self, x):
-        self.__replacer(self.pair_map(self.__data[x]), x)
+        self.__replacer(self.__pair_map(self.__data[x]), x)
 
     def __switcher(self, v, x):
         return {
