@@ -62,6 +62,17 @@ class Genome:
         self.__switcher(str(mut), loc)
 
 
+def n_finder(s):
+    g = Genome()
+    n = 0
+
+    while g.get_data() != s:
+        g.r_change()
+        n += 1
+
+    return n
+
+
 genome = Genome(BLOCK_SIZE)
 genome.get_data()
 

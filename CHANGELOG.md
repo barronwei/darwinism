@@ -18,3 +18,7 @@ GENED 1004
 
 - Change ideation
 - Genome mutation
+
+## 0.0.4
+
+- Add function to find number of mutations to match
