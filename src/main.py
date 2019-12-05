@@ -2,12 +2,6 @@ import secrets as sr
 from enum import Enum
 
 """
-genome sample size
-"""
-
-BLOCK_SIZE = 100
-
-"""
 nucleotides
 """
 
@@ -86,7 +80,7 @@ finder for number of necessary mutations for s
 
 
 def n_finder(s):
-    g = Genome()
+    g = Genome(len(s))
     n = 0
 
     while g.get_data() != s:
@@ -94,10 +88,3 @@ def n_finder(s):
         n += 1
 
     return n
-
-
-genome = Genome(BLOCK_SIZE)
-genome.get_data()
-
-genome.r_change()
-genome.get_data()
