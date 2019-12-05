@@ -13,3 +13,8 @@ GENED 1004
 - Add data
 - Add Jupyter Lab
 - Add Pandas data read
+
+## 0.0.3
+
+- Change ideation
+- Genome mutation
