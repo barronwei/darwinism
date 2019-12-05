@@ -1,7 +1,15 @@
 import secrets as sr
 from enum import Enum
 
+"""
+genome sample size
+"""
+
 BLOCK_SIZE = 100
+
+"""
+nucleotides
+"""
 
 
 class Nucleo(Enum):
@@ -11,10 +19,20 @@ class Nucleo(Enum):
     C = 3
 
 
+"""
+possible mutations
+"""
+
+
 class Change(Enum):
     modify = 0
     insert = 1
     delete = 2
+
+
+"""
+genome abstraction barrier
+"""
 
 
 class Genome:
@@ -60,6 +78,11 @@ class Genome:
         mut = Change(num).value
 
         self.__switcher(str(mut), loc)
+
+
+"""
+finder for number of necessary mutations for s
+"""
 
 
 def n_finder(s):

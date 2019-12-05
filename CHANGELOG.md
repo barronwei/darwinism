@@ -22,3 +22,7 @@ GENED 1004
 ## 0.0.4
 
 - Add function to find number of mutations to match
+
+## 0.0.5
+
+- Add code annotiation
