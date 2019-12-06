@@ -1,4 +1,5 @@
-import secrets as sr
+import random as rand
+import secrets as sec
 from enum import Enum
 
 """
@@ -35,13 +36,13 @@ class Genome:
         self.__data = self.__r_genome()
 
     def __r_nucleo(self):
-        return Nucleo(sr.randbelow(len(Nucleo))).name
+        return Nucleo(sec.randbelow(len(Nucleo))).name
 
     def __r_genome(self):
         return str().join(map(str, [self.__r_nucleo() for i in range(self.__size)]))
 
     def __replacer(self, v, x):
-        self.__data = self.__data[0:x] + v + self.__data[x:]
+        self.__data = self.__data[0:x] + v + self.__data[x + 1 :]
 
     def __r_insert(self, x):
         self.__replacer(self.__r_nucleo(), x)
@@ -66,8 +67,8 @@ class Genome:
         return self.__data
 
     def r_change(self):
-        loc = sr.randbelow(len(self.__data))
-        num = sr.randbelow(len(Change))
+        loc = sec.randbelow(len(self.__data))
+        num = sec.randbelow(len(Change))
 
         mut = Change(num).value
 
@@ -81,6 +82,53 @@ finder for number of necessary mutations for s
 
 def n_finder(s):
     g = Genome(len(s))
+    n = 0
+
+    while g.get_data() != s:
+        g.r_change()
+        n += 1
+
+    return n
+
+
+"""
+simple genome abstraction barrier
+"""
+
+
+class Genome_s:
+    def __init__(self, s):
+        self.__size = len(s)
+        self.__data = self.__d_genome(s)
+
+    def __d_genome(self, s):
+        res = [self.__pair_map(n) if bool(rand.getrandbits(1)) else n for n in s]
+        return str().join(map(str, res))
+
+    def __replacer(self, v, x):
+        self.__data = self.__data[0:x] + v + self.__data[x + 1 :]
+
+    def __pair_map(self, v):
+        return {"A": "T", "G": "C", "T": "A", "C": "G"}.get(v)
+
+    def __r_modify(self, x):
+        self.__replacer(self.__pair_map(self.__data[x]), x)
+
+    def get_data(self):
+        return self.__data
+
+    def r_change(self):
+        loc = sec.randbelow(self.__size)
+        self.__r_modify(loc)
+
+
+"""
+simple finder for number of necessary mutations for s
+"""
+
+
+def n_finder_s(s):
+    g = Genome_s(s)
     n = 0
 
     while g.get_data() != s:

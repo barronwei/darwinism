@@ -26,3 +26,7 @@ GENED 1004
 ## 0.0.5
 
 - Add code annotiation
+
+## 0.0.6
+
+- Add simple genome
