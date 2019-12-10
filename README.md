@@ -68,7 +68,7 @@ Interestingly enough, there was high variation between different species, even t
 
 <p align="center">
 <br>
-<img src="updated_histogram.png" alt="histogram" width="75%"/>
+<img src="img/updated_histogram.png" alt="histogram" width="75%"/>
 </p>
 
 ### academic references
@@ -83,14 +83,14 @@ This idea is exemplified in the diagram below, in which two possible amino acids
 
 <p align="center">
 <br>
-<img src="hartl.jpg" alt="hartl" width="75%"/>
+<img src="img/hartl.jpg" alt="hartl" width="75%"/>
 </p>
 
 Carneiro and Hartl build upon the earlier works of Wright in *The roles of mutation, inbreeding, cross-breeding and selection in evolution.* Specifically, the various possible routes in which a certain genetic sequence can develop is mapped below, whereby the figure below shows the cimbinations in the cases of 2 to 5 paired allelomorphs.
 
 <p align="center">
 <br>
-<img src="wright.png" alt="wright" width="40%"/>
+<img src="img/wright.png" alt="wright" width="40%"/>
 </p>
 
 Wright provides multiple hypotheses for the reason of certain paths being pursued in nature. One possibility is that "a particular combination gives maximum adaptation and that the adaptiveness of the other combinations falls off more or less regularly according to the number of removes." As our script is entirely randomized, the nucleotide changes are not proportional to the actual number which would be found in a natural pathway.
