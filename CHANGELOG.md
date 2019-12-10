@@ -30,3 +30,7 @@ GENED 1004
 ## 0.0.6
 
 - Add simple genome
+
+## 0.0.7
+
+- Add simulation for genome filling
