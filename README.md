@@ -4,7 +4,7 @@ There are two portions to this final project. The first is a program which attem
 
 ### finding ancestral protein sequences using derived organisms
 
-In *The roles of mutation, inbreeding, cross-breeding and selection in evolution,* Sewll Wright explains gene interactions and varying degrees of fitness using mathematical modeling, applying the idea of an adaptive landscape to different gene expressions in similar species. In the graph shown below, the various possible routes in which a certain genetic sequence can develop is mapped, whereby the figure shows fitness in gene combinations in the cases of 2 to 5 paired allelomorphs.
+In *The roles of mutation, inbreeding, cross-breeding and selection in evolution,* Sewall Wright explains gene interactions and varying degrees of fitness using mathematical modeling, applying the idea of an adaptive landscape to different gene expressions in similar species. In the graph shown below, the various possible routes in which a certain genetic sequence can develop is mapped, whereby the figure shows fitness in gene combinations in the cases of 2 to 5 paired allelomorphs.
 
 <p align="center">
 <br>
