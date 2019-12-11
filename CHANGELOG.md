@@ -39,3 +39,8 @@ GENED 1004
 
 - Add code annotation for proteins.py
 - Add examples for protein simulation
+
+## 0.0.9
+
+- Add code annotation and explanation for proteins notebook
+- Add mode calculator

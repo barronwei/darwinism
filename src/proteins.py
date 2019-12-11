@@ -1,5 +1,5 @@
-from statistics import mode
 import numpy as np
+import scipy.stats
 
 """
 This function returns false for the 0 string.
@@ -7,6 +7,13 @@ This function returns false for the 0 string.
 
 def false_s(s):
     return s != '0'
+
+"""
+This function returns a list of modes in x.
+"""
+
+def mode_fn(x):
+    return [i for i in set(x) if x.count(i) == max(map(x.count, x))]
 
 """
 This function recursively looks for a valid value in protein
@@ -32,12 +39,16 @@ proteins in arr with ancestral priority of list p at index i.
 """
 
 def checker(arr, p, i):
-    try:
-        m = mode([pro[i] for pro in arr])   
-        return m if false_s(m) else r_check(p, 0, i)
+    r = [s[i] for s in arr]
+    m = mode_fn(r)
     
-    except:
-        return r_check(p, 0, i) 
+    if len(m) == 1:
+        return m[0] if false_s(m[0]) else r_check(p, 0, i)
+    
+    lst = [c for c in p if c[i] in m]
+    
+    return r_check(lst, 0, i)
+
     
 """
 This function predicts the ancestral protein of the proteins in arr
@@ -110,3 +121,4 @@ def fillers(arr, s, n):
         it.iternext()
 
     return np.unravel_index(value.argmax(), value.shape)
+
