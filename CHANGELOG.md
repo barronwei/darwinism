@@ -44,3 +44,8 @@ GENED 1004
 
 - Add code annotation and explanation for proteins notebook
 - Add mode calculator
+
+## 0.1.0
+
+- Rename main to creationist for more accurate noting
+- Add code annotation and explanation for creationist notebook
