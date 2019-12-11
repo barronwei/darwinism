@@ -34,3 +34,8 @@ GENED 1004
 ## 0.0.7
 
 - Add simulation for genome filling
+
+## 0.0.8
+
+- Add code annotation for proteins.py
+- Add examples for protein simulation
