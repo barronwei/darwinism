@@ -56,7 +56,7 @@ Using the following graph as a model:
 
 <p align="center">
 <br>
-<img src="img/lineage.png" alt="lineage" width="65%"/>
+<img src="img/lineage.PNG" alt="lineage" width="65%"/>
 </p>
 
 Take the protein sequence of an organism, such as the epidermal growth factor protein in the transmembrane domain (in this case, Canis lupus):
@@ -143,8 +143,6 @@ The function for results from human sequence would be called as follows:
 | 1638374 | 4647228 | 965247  |
 | 5031016 | 51397   | 17387   |
 | 1218071 | 3658662 | 347687  |
-
-### academic references
 
 Although our program demonstrates (in a very abstract manner) that the number of possible nucleotide variations is incredibly high and that single change mutations between species are highly variable, the results are not necessarily applicable to reality. Although we originally had insertions and deletions in our program, the run-time of the function was beyond an easily returnable value, in part because the length of the modified sequence would take too long to equal the specified organismic sequence.
 
