@@ -1,4 +1,4 @@
-# darwinism final project
+# understanding darwinism final project
 
 There are two portions to this final project. The first is a program which attempts to find the ancestral protein sequences for organisms which have a shared protein, and the second is a program demonstrating the extent of variation between organismic DNA sequences.
 
